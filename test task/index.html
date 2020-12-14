@@ -1,0 +1,978 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DreamJob</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media.css">
+</head>
+<body>
+    <header class="header">
+        <div class="wrapper">
+            <div class="left">
+                <div class="logo">
+                    <h3>DreamJob</h3>
+                </div>
+            </div>
+            <div class="right">
+                <div class="search__container">
+                    <svg class="search__icon" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M15.9023 14.9597L11.2545 10.3118C12.136 9.22342 12.6667 7.8398 12.6667 6.33336C12.6667 2.84116 9.82552 0 6.33333 0C2.84113 0 0 2.84116 0 6.33336C0 9.82555 2.84116 12.6667 6.33336 12.6667C7.8398 12.6667 9.22342 12.136 10.3118 11.2545L14.9597 15.9024C15.0899 16.0325 15.3009 16.0325 15.4311 15.9024L15.9024 15.4311C16.0325 15.3009 16.0325 15.0898 15.9023 14.9597ZM6.33336 11.3334C3.5762 11.3334 1.33335 9.09052 1.33335 6.33336C1.33335 3.57619 3.5762 1.33335 6.33336 1.33335C9.09052 1.33335 11.3334 3.57619 11.3334 6.33336C11.3334 9.09052 9.09052 11.3334 6.33336 11.3334Z" fill="black"/>
+                    </svg>
+                    <input type="text" class="search" placeholder="Искать...">
+                    <div class="search__results">
+                    </div>
+                </div>
+                <div class="cart">
+                    <div class="cart__size">
+                        <svg class="purchase" width="24" height="26" viewBox="0 0 24 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M23.2762 25.1454L21.3001 6.32721C21.2586 5.93326 20.9266 5.63413 20.5304 5.63413H16.8163V4.78731C16.8163 2.14769 14.6686 0 12.0289 0C9.38912 0 7.24143 2.14769 7.24143 4.78731V5.63413H3.52727C3.13113 5.63413 2.79907 5.93326 2.75762 6.32721L0.781515 25.1454C0.758703 25.3634 0.829519 25.581 0.976109 25.7441C1.1229 25.9069 1.33197 25.9999 1.55117 25.9999H22.5063C22.7257 25.9999 22.9348 25.9069 23.0814 25.7441C23.2284 25.581 23.299 25.3634 23.2762 25.1454ZM8.78907 4.78731C8.78907 3.00105 10.2425 1.54763 12.0289 1.54763C13.8152 1.54763 15.2686 3.00105 15.2686 4.78731V5.63413H8.78907V4.78731ZM2.41048 24.4523L4.22412 7.18176H7.24143V8.8871C7.24143 9.31437 7.58797 9.66091 8.01525 9.66091C8.44253 9.66091 8.78907 9.31437 8.78907 8.8871V7.18176H15.2686V8.8871C15.2686 9.31437 15.6152 9.66091 16.0424 9.66091C16.4697 9.66091 16.8163 9.31437 16.8163 8.8871V7.18176H19.8336L21.6472 24.4523H2.41048Z" fill="black"/>
+                            </svg>
+                        <div class="quant">
+                            <div class="counter">0</div>
+                        </div>
+                    </div>
+                    <p class="total__price">0</p>
+                </div>
+                <div class="menu__opener">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+                <div class="lang">
+                    <div class="fake__select">en
+                        <svg class="fake__arrow" width="10" height="8" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M8.82082 0.910431L5 4.73125L1.17918 0.910431L0 2.08957L5 7.08957L10 2.08957L8.82082 0.910431Z" fill="black"/>
+                        </svg>
+                        <ul class="fake__what">
+                            <li class="fake__option">ru</li>
+                            <li class="fake__option">ua</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <div class="wrapper">
+            <div class="cards__container">
+                <div class="card">
+                    <div class="carousel hasmini">
+                        <aside class="mini">
+                            <div class="item">
+                                <img class="item__img" src="images/kedy 1.png" alt="kedy 1">
+                            </div>
+                            <div class="item">
+                                <img class="item__img" src="images/muzhskiye-tufli 1.png" alt="muzhskiye-tufli 1">
+                            </div>
+                            <div class="item">
+                                <img class="item__img" src="images/obuv 1.png" alt="obuv 1">
+                            </div>
+                        </aside>
+                        <div class="slider__container">
+                            <div class="slider">
+                                <div class="slide">
+                                    <img class="slide__img" src="images/kedy 1.png" alt="kedy 1">
+                                </div>
+                                <div class="slide">
+                                    <img class="slide__img" src="images/muzhskiye-tufli 1.png" alt="muzhskiye-tufli 1">
+                                </div>
+                                <div class="slide">
+                                    <img class="slide__img" src="images/obuv 1.png" alt="obuv 1">
+                                </div>
+                                <div class="dots">
+                                    <div class="dot"></div>
+                                    <div class="dot"></div>
+                                    <div class="dot"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="name__price have-discount">
+                        <div class="name">Nike</div>
+                        <div class="price">799</div>
+                        <div class="discount">999р</div>
+                    </div>
+                    <button class="checkout">
+                        <div class="start">Начать оформление</div>
+                        <div class="del__add">
+                            <div class="del">
+                                <svg width="26" height="25" viewBox="0 0 26 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6.67883 6.72707L7.52134 19.5558C7.56136 20.2971 8.12794 20.8387 8.86935 20.8387H16.6204C17.3648 20.8387 17.9208 20.2971 17.9684 19.5558L18.8109 6.72707" stroke="#1D1D1B" stroke-width="1.57538" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M5.33081 6.72707H20.1589Z" fill="#1D1D1B"/>
+                                    <path d="M5.33081 6.72707H20.1589" stroke="#1D1D1B" stroke-width="1.57538" stroke-miterlimit="10" stroke-linecap="round"/>
+                                    <path d="M10.0488 6.72708V5.12348C10.0484 4.99702 10.0743 4.87174 10.125 4.75484C10.1757 4.63794 10.2501 4.53172 10.3441 4.4423C10.438 4.35289 10.5496 4.28203 10.6725 4.23381C10.7953 4.18558 10.927 4.16095 11.0598 4.16132H14.4299C14.5627 4.16095 14.6944 4.18558 14.8172 4.23381C14.9401 4.28203 15.0517 4.35289 15.1456 4.4423C15.2396 4.53172 15.314 4.63794 15.3647 4.75484C15.4154 4.87174 15.4413 4.99702 15.4409 5.12348V6.72708" stroke="#1D1D1B" stroke-width="1.57538" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M12.7449 9.29283V18.273" stroke="#1D1D1B" stroke-width="1.57538" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M9.71179 9.29283L10.0488 18.273" stroke="#1D1D1B" stroke-width="1.57538" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M15.7779 9.29283L15.4409 18.273" stroke="#1D1D1B" stroke-width="1.57538" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                            <div class="size">
+                                <p class="num">0</p>
+                                <svg class="loading" width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M4.52045 12.1543L3.38766 11.0215C4.50283 14.6756 8.3691 16.7338 12.0232 15.6186C13.4157 15.1936 14.6387 14.34 15.5179 13.1795L16.5205 13.9391C13.7976 17.5387 8.67216 18.2496 5.07245 15.5267C3.58044 14.3982 2.52081 12.7919 2.07048 10.9762L0.889868 12.1543L0 11.265L2.7061 8.55892L5.41221 11.265L4.52045 12.1543Z" fill="black"/>
+                                    <path d="M17.2939 9.45383L14.5878 6.74772L15.4777 5.85785L16.6237 7.00323C15.5183 3.34326 11.6553 1.27234 7.9953 2.37772C6.53955 2.81738 5.26909 3.72412 4.38013 4.95792L3.35873 4.22286C4.62105 2.45808 6.53632 1.27101 8.67843 0.925822C9.11747 0.854551 9.56153 0.818561 10.0063 0.818207C13.7633 0.819977 17.0339 3.38602 17.9295 7.0347L19.1076 5.85785L20 6.74772L17.2939 9.45383ZM17.2624 7.64074L17.2945 7.67283L17.3411 7.62563L17.2624 7.64074Z" fill="black"/>
+                                </svg>
+                            </div>
+                            <div class="add">
+                                <svg width="26" height="25" viewBox="0 0 26 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M20.6752 12.129H4.90424" stroke="#1D1D1B" stroke-width="1.71035" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M12.7897 4.62457V19.6335" stroke="#1D1D1B" stroke-width="1.71035" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="place__order">
+                            Оформить
+                        </div>
+                    </button>
+                </div>
+                <div class="card">
+                    <div class="carousel nomini">
+                        <aside class="mini">
+                            <div class="item">
+                                <img class="item__img" src="images/kedy 1.png" alt="kedy 1">
+                            </div>
+                            <div class="item">
+                                <img class="item__img" src="images/muzhskiye-tufli 1.png" alt="muzhskiye-tufli 1">
+                            </div>
+                            <div class="item">
+                                <img class="item__img" src="images/obuv 1.png" alt="obuv 1">
+                            </div>
+                        </aside>
+                        <div class="slider__container">
+                            <div class="slider">
+                                <div class="slide">
+                                    <img class="slide__img" src="images/kedy 1.png" alt="kedy 1">
+                                </div>
+                                <div class="slide">
+                                    <img class="slide__img" src="images/muzhskiye-tufli 1.png" alt="muzhskiye-tufli 1">
+                                </div>
+                                <div class="slide">
+                                    <img class="slide__img" src="images/obuv 1.png" alt="obuv 1">
+                                </div>
+                                <div class="dots">
+                                    <div class="dot"></div>
+                                    <div class="dot"></div>
+                                    <div class="dot"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="name__price have-discount">
+                        <div class="name">Adidas</div>
+                        <div class="price">950</div>
+                        <div class="discount">1199р</div>
+                    </div>
+                    <button class="checkout">
+                        <div class="start">Начать оформление</div>
+                        <div class="del__add">
+                            <div class="del">
+                                <svg width="26" height="25" viewBox="0 0 26 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6.67883 6.72707L7.52134 19.5558C7.56136 20.2971 8.12794 20.8387 8.86935 20.8387H16.6204C17.3648 20.8387 17.9208 20.2971 17.9684 19.5558L18.8109 6.72707" stroke="#1D1D1B" stroke-width="1.57538" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M5.33081 6.72707H20.1589Z" fill="#1D1D1B"/>
+                                    <path d="M5.33081 6.72707H20.1589" stroke="#1D1D1B" stroke-width="1.57538" stroke-miterlimit="10" stroke-linecap="round"/>
+                                    <path d="M10.0488 6.72708V5.12348C10.0484 4.99702 10.0743 4.87174 10.125 4.75484C10.1757 4.63794 10.2501 4.53172 10.3441 4.4423C10.438 4.35289 10.5496 4.28203 10.6725 4.23381C10.7953 4.18558 10.927 4.16095 11.0598 4.16132H14.4299C14.5627 4.16095 14.6944 4.18558 14.8172 4.23381C14.9401 4.28203 15.0517 4.35289 15.1456 4.4423C15.2396 4.53172 15.314 4.63794 15.3647 4.75484C15.4154 4.87174 15.4413 4.99702 15.4409 5.12348V6.72708" stroke="#1D1D1B" stroke-width="1.57538" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M12.7449 9.29283V18.273" stroke="#1D1D1B" stroke-width="1.57538" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M9.71179 9.29283L10.0488 18.273" stroke="#1D1D1B" stroke-width="1.57538" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M15.7779 9.29283L15.4409 18.273" stroke="#1D1D1B" stroke-width="1.57538" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                            <div class="size">
+                                <p class="num">0</p>
+                                <svg class="loading" width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M4.52045 12.1543L3.38766 11.0215C4.50283 14.6756 8.3691 16.7338 12.0232 15.6186C13.4157 15.1936 14.6387 14.34 15.5179 13.1795L16.5205 13.9391C13.7976 17.5387 8.67216 18.2496 5.07245 15.5267C3.58044 14.3982 2.52081 12.7919 2.07048 10.9762L0.889868 12.1543L0 11.265L2.7061 8.55892L5.41221 11.265L4.52045 12.1543Z" fill="black"/>
+                                    <path d="M17.2939 9.45383L14.5878 6.74772L15.4777 5.85785L16.6237 7.00323C15.5183 3.34326 11.6553 1.27234 7.9953 2.37772C6.53955 2.81738 5.26909 3.72412 4.38013 4.95792L3.35873 4.22286C4.62105 2.45808 6.53632 1.27101 8.67843 0.925822C9.11747 0.854551 9.56153 0.818561 10.0063 0.818207C13.7633 0.819977 17.0339 3.38602 17.9295 7.0347L19.1076 5.85785L20 6.74772L17.2939 9.45383ZM17.2624 7.64074L17.2945 7.67283L17.3411 7.62563L17.2624 7.64074Z" fill="black"/>
+                                </svg>
+                            </div>
+                            <div class="add">
+                                <svg width="26" height="25" viewBox="0 0 26 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M20.6752 12.129H4.90424" stroke="#1D1D1B" stroke-width="1.71035" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M12.7897 4.62457V19.6335" stroke="#1D1D1B" stroke-width="1.71035" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="place__order">
+                            Оформить
+                        </div>
+                    </button>
+                </div>
+                <div class="card">
+                    <div class="carousel nomini">
+                        <aside class="mini">
+                            <div class="item">
+                                <img class="item__img" src="images/kedy 1.png" alt="kedy 1">
+                            </div>
+                            <div class="item">
+                                <img class="item__img" src="images/muzhskiye-tufli 1.png" alt="muzhskiye-tufli 1">
+                            </div>
+                            <div class="item">
+                                <img class="item__img" src="images/obuv 1.png" alt="obuv 1">
+                            </div>
+                        </aside>
+                        <div class="slider__container">
+                            <div class="slider">
+                                <div class="slide">
+                                    <img class="slide__img" src="images/kedy 1.png" alt="kedy 1">
+                                </div>
+                                <div class="slide">
+                                    <img class="slide__img" src="images/muzhskiye-tufli 1.png" alt="muzhskiye-tufli 1">
+                                </div>
+                                <div class="slide">
+                                    <img class="slide__img" src="images/obuv 1.png" alt="obuv 1">
+                                </div>
+                                <div class="dots">
+                                    <div class="dot"></div>
+                                    <div class="dot"></div>
+                                    <div class="dot"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="name__price have-discount">
+                        <div class="name">Puma</div>
+                        <div class="price">730</div>
+                        <div class="discount">999р</div>
+                    </div>
+                    <button class="checkout">
+                        <div class="start">Начать оформление</div>
+                        <div class="del__add">
+                            <div class="del">
+                                <svg width="26" height="25" viewBox="0 0 26 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6.67883 6.72707L7.52134 19.5558C7.56136 20.2971 8.12794 20.8387 8.86935 20.8387H16.6204C17.3648 20.8387 17.9208 20.2971 17.9684 19.5558L18.8109 6.72707" stroke="#1D1D1B" stroke-width="1.57538" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M5.33081 6.72707H20.1589Z" fill="#1D1D1B"/>
+                                    <path d="M5.33081 6.72707H20.1589" stroke="#1D1D1B" stroke-width="1.57538" stroke-miterlimit="10" stroke-linecap="round"/>
+                                    <path d="M10.0488 6.72708V5.12348C10.0484 4.99702 10.0743 4.87174 10.125 4.75484C10.1757 4.63794 10.2501 4.53172 10.3441 4.4423C10.438 4.35289 10.5496 4.28203 10.6725 4.23381C10.7953 4.18558 10.927 4.16095 11.0598 4.16132H14.4299C14.5627 4.16095 14.6944 4.18558 14.8172 4.23381C14.9401 4.28203 15.0517 4.35289 15.1456 4.4423C15.2396 4.53172 15.314 4.63794 15.3647 4.75484C15.4154 4.87174 15.4413 4.99702 15.4409 5.12348V6.72708" stroke="#1D1D1B" stroke-width="1.57538" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M12.7449 9.29283V18.273" stroke="#1D1D1B" stroke-width="1.57538" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M9.71179 9.29283L10.0488 18.273" stroke="#1D1D1B" stroke-width="1.57538" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M15.7779 9.29283L15.4409 18.273" stroke="#1D1D1B" stroke-width="1.57538" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                            <div class="size">
+                                <p class="num">0</p>
+                                <svg class="loading" width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M4.52045 12.1543L3.38766 11.0215C4.50283 14.6756 8.3691 16.7338 12.0232 15.6186C13.4157 15.1936 14.6387 14.34 15.5179 13.1795L16.5205 13.9391C13.7976 17.5387 8.67216 18.2496 5.07245 15.5267C3.58044 14.3982 2.52081 12.7919 2.07048 10.9762L0.889868 12.1543L0 11.265L2.7061 8.55892L5.41221 11.265L4.52045 12.1543Z" fill="black"/>
+                                    <path d="M17.2939 9.45383L14.5878 6.74772L15.4777 5.85785L16.6237 7.00323C15.5183 3.34326 11.6553 1.27234 7.9953 2.37772C6.53955 2.81738 5.26909 3.72412 4.38013 4.95792L3.35873 4.22286C4.62105 2.45808 6.53632 1.27101 8.67843 0.925822C9.11747 0.854551 9.56153 0.818561 10.0063 0.818207C13.7633 0.819977 17.0339 3.38602 17.9295 7.0347L19.1076 5.85785L20 6.74772L17.2939 9.45383ZM17.2624 7.64074L17.2945 7.67283L17.3411 7.62563L17.2624 7.64074Z" fill="black"/>
+                                </svg>
+                            </div>
+                            <div class="add">
+                                <svg width="26" height="25" viewBox="0 0 26 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M20.6752 12.129H4.90424" stroke="#1D1D1B" stroke-width="1.71035" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M12.7897 4.62457V19.6335" stroke="#1D1D1B" stroke-width="1.71035" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="place__order">
+                            Оформить
+                        </div>
+                    </button>
+                </div>
+                <div class="card">
+                    <div class="carousel nomini">
+                        <aside class="mini">
+                            <div class="item">
+                                <img class="item__img" src="images/kedy 1.png" alt="kedy 1">
+                            </div>
+                            <div class="item">
+                                <img class="item__img" src="images/muzhskiye-tufli 1.png" alt="muzhskiye-tufli 1">
+                            </div>
+                            <div class="item">
+                                <img class="item__img" src="images/obuv 1.png" alt="obuv 1">
+                            </div>
+                        </aside>
+                        <div class="slider__container">
+                            <div class="slider">
+                                <div class="slide">
+                                    <img class="slide__img" src="images/kedy 1.png" alt="kedy 1">
+                                </div>
+                                <div class="slide">
+                                    <img class="slide__img" src="images/muzhskiye-tufli 1.png" alt="muzhskiye-tufli 1">
+                                </div>
+                                <div class="slide">
+                                    <img class="slide__img" src="images/obuv 1.png" alt="obuv 1">
+                                </div>
+                                <div class="dots">
+                                    <div class="dot"></div>
+                                    <div class="dot"></div>
+                                    <div class="dot"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="name__price have-discount">
+                        <div class="name">Reebok</div>
+                        <div class="price">849</div>
+                        <div class="discount">1399р</div>
+                    </div>
+                    <button class="checkout">
+                        <div class="start">Начать оформление</div>
+                        <div class="del__add">
+                            <div class="del">
+                                <svg width="26" height="25" viewBox="0 0 26 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6.67883 6.72707L7.52134 19.5558C7.56136 20.2971 8.12794 20.8387 8.86935 20.8387H16.6204C17.3648 20.8387 17.9208 20.2971 17.9684 19.5558L18.8109 6.72707" stroke="#1D1D1B" stroke-width="1.57538" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M5.33081 6.72707H20.1589Z" fill="#1D1D1B"/>
+                                    <path d="M5.33081 6.72707H20.1589" stroke="#1D1D1B" stroke-width="1.57538" stroke-miterlimit="10" stroke-linecap="round"/>
+                                    <path d="M10.0488 6.72708V5.12348C10.0484 4.99702 10.0743 4.87174 10.125 4.75484C10.1757 4.63794 10.2501 4.53172 10.3441 4.4423C10.438 4.35289 10.5496 4.28203 10.6725 4.23381C10.7953 4.18558 10.927 4.16095 11.0598 4.16132H14.4299C14.5627 4.16095 14.6944 4.18558 14.8172 4.23381C14.9401 4.28203 15.0517 4.35289 15.1456 4.4423C15.2396 4.53172 15.314 4.63794 15.3647 4.75484C15.4154 4.87174 15.4413 4.99702 15.4409 5.12348V6.72708" stroke="#1D1D1B" stroke-width="1.57538" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M12.7449 9.29283V18.273" stroke="#1D1D1B" stroke-width="1.57538" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M9.71179 9.29283L10.0488 18.273" stroke="#1D1D1B" stroke-width="1.57538" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M15.7779 9.29283L15.4409 18.273" stroke="#1D1D1B" stroke-width="1.57538" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                            <div class="size">
+                                <p class="num">0</p>
+                                <svg class="loading" width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M4.52045 12.1543L3.38766 11.0215C4.50283 14.6756 8.3691 16.7338 12.0232 15.6186C13.4157 15.1936 14.6387 14.34 15.5179 13.1795L16.5205 13.9391C13.7976 17.5387 8.67216 18.2496 5.07245 15.5267C3.58044 14.3982 2.52081 12.7919 2.07048 10.9762L0.889868 12.1543L0 11.265L2.7061 8.55892L5.41221 11.265L4.52045 12.1543Z" fill="black"/>
+                                    <path d="M17.2939 9.45383L14.5878 6.74772L15.4777 5.85785L16.6237 7.00323C15.5183 3.34326 11.6553 1.27234 7.9953 2.37772C6.53955 2.81738 5.26909 3.72412 4.38013 4.95792L3.35873 4.22286C4.62105 2.45808 6.53632 1.27101 8.67843 0.925822C9.11747 0.854551 9.56153 0.818561 10.0063 0.818207C13.7633 0.819977 17.0339 3.38602 17.9295 7.0347L19.1076 5.85785L20 6.74772L17.2939 9.45383ZM17.2624 7.64074L17.2945 7.67283L17.3411 7.62563L17.2624 7.64074Z" fill="black"/>
+                                </svg>
+                            </div>
+                            <div class="add">
+                                <svg width="26" height="25" viewBox="0 0 26 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M20.6752 12.129H4.90424" stroke="#1D1D1B" stroke-width="1.71035" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M12.7897 4.62457V19.6335" stroke="#1D1D1B" stroke-width="1.71035" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="place__order">
+                            Оформить
+                        </div>
+                    </button>
+                </div>
+                <div class="card">
+                    <div class="carousel nomini">
+                        <aside class="mini">
+                            <div class="item">
+                                <img class="item__img" src="images/kedy 1.png" alt="kedy 1">
+                            </div>
+                            <div class="item">
+                                <img class="item__img" src="images/muzhskiye-tufli 1.png" alt="muzhskiye-tufli 1">
+                            </div>
+                            <div class="item">
+                                <img class="item__img" src="images/obuv 1.png" alt="obuv 1">
+                            </div>
+                        </aside>
+                        <div class="slider__container">
+                            <div class="slider">
+                                <div class="slide">
+                                    <img class="slide__img" src="images/kedy 1.png" alt="kedy 1">
+                                </div>
+                                <div class="slide">
+                                    <img class="slide__img" src="images/muzhskiye-tufli 1.png" alt="muzhskiye-tufli 1">
+                                </div>
+                                <div class="slide">
+                                    <img class="slide__img" src="images/obuv 1.png" alt="obuv 1">
+                                </div>
+                                <div class="dots">
+                                    <div class="dot"></div>
+                                    <div class="dot"></div>
+                                    <div class="dot"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="name__price">
+                        <div class="name">Adidas</div>
+                        <div class="price">999</div>
+                        <div class="discount"></div>
+                    </div>
+                    <button class="checkout">
+                        <div class="start">Начать оформление</div>
+                        <div class="del__add">
+                            <div class="del">
+                                <svg width="26" height="25" viewBox="0 0 26 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6.67883 6.72707L7.52134 19.5558C7.56136 20.2971 8.12794 20.8387 8.86935 20.8387H16.6204C17.3648 20.8387 17.9208 20.2971 17.9684 19.5558L18.8109 6.72707" stroke="#1D1D1B" stroke-width="1.57538" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M5.33081 6.72707H20.1589Z" fill="#1D1D1B"/>
+                                    <path d="M5.33081 6.72707H20.1589" stroke="#1D1D1B" stroke-width="1.57538" stroke-miterlimit="10" stroke-linecap="round"/>
+                                    <path d="M10.0488 6.72708V5.12348C10.0484 4.99702 10.0743 4.87174 10.125 4.75484C10.1757 4.63794 10.2501 4.53172 10.3441 4.4423C10.438 4.35289 10.5496 4.28203 10.6725 4.23381C10.7953 4.18558 10.927 4.16095 11.0598 4.16132H14.4299C14.5627 4.16095 14.6944 4.18558 14.8172 4.23381C14.9401 4.28203 15.0517 4.35289 15.1456 4.4423C15.2396 4.53172 15.314 4.63794 15.3647 4.75484C15.4154 4.87174 15.4413 4.99702 15.4409 5.12348V6.72708" stroke="#1D1D1B" stroke-width="1.57538" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M12.7449 9.29283V18.273" stroke="#1D1D1B" stroke-width="1.57538" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M9.71179 9.29283L10.0488 18.273" stroke="#1D1D1B" stroke-width="1.57538" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M15.7779 9.29283L15.4409 18.273" stroke="#1D1D1B" stroke-width="1.57538" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                            <div class="size">
+                                <p class="num">0</p>
+                                <svg class="loading" width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M4.52045 12.1543L3.38766 11.0215C4.50283 14.6756 8.3691 16.7338 12.0232 15.6186C13.4157 15.1936 14.6387 14.34 15.5179 13.1795L16.5205 13.9391C13.7976 17.5387 8.67216 18.2496 5.07245 15.5267C3.58044 14.3982 2.52081 12.7919 2.07048 10.9762L0.889868 12.1543L0 11.265L2.7061 8.55892L5.41221 11.265L4.52045 12.1543Z" fill="black"/>
+                                    <path d="M17.2939 9.45383L14.5878 6.74772L15.4777 5.85785L16.6237 7.00323C15.5183 3.34326 11.6553 1.27234 7.9953 2.37772C6.53955 2.81738 5.26909 3.72412 4.38013 4.95792L3.35873 4.22286C4.62105 2.45808 6.53632 1.27101 8.67843 0.925822C9.11747 0.854551 9.56153 0.818561 10.0063 0.818207C13.7633 0.819977 17.0339 3.38602 17.9295 7.0347L19.1076 5.85785L20 6.74772L17.2939 9.45383ZM17.2624 7.64074L17.2945 7.67283L17.3411 7.62563L17.2624 7.64074Z" fill="black"/>
+                                </svg>
+                            </div>
+                            <div class="add">
+                                <svg width="26" height="25" viewBox="0 0 26 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M20.6752 12.129H4.90424" stroke="#1D1D1B" stroke-width="1.71035" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M12.7897 4.62457V19.6335" stroke="#1D1D1B" stroke-width="1.71035" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="place__order">
+                            Оформить
+                        </div>
+                    </button>
+                </div>
+                <div class="card">
+                    <div class="carousel nomini">
+                        <aside class="mini">
+                            <div class="item">
+                                <img class="item__img" src="images/kedy 1.png" alt="kedy 1">
+                            </div>
+                            <div class="item">
+                                <img class="item__img" src="images/muzhskiye-tufli 1.png" alt="muzhskiye-tufli 1">
+                            </div>
+                            <div class="item">
+                                <img class="item__img" src="images/obuv 1.png" alt="obuv 1">
+                            </div>
+                        </aside>
+                        <div class="slider__container">
+                            <div class="slider">
+                                <div class="slide">
+                                    <img class="slide__img" src="images/kedy 1.png" alt="kedy 1">
+                                </div>
+                                <div class="slide">
+                                    <img class="slide__img" src="images/muzhskiye-tufli 1.png" alt="muzhskiye-tufli 1">
+                                </div>
+                                <div class="slide">
+                                    <img class="slide__img" src="images/obuv 1.png" alt="obuv 1">
+                                </div>
+                                <div class="dots">
+                                    <div class="dot"></div>
+                                    <div class="dot"></div>
+                                    <div class="dot"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="name__price have-discount">
+                        <div class="name">Parkhurst</div>
+                        <div class="price">699</div>
+                        <div class="discount">899р</div>
+                    </div>
+                    <button class="checkout">
+                        <div class="start">Начать оформление</div>
+                        <div class="del__add">
+                            <div class="del">
+                                <svg width="26" height="25" viewBox="0 0 26 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6.67883 6.72707L7.52134 19.5558C7.56136 20.2971 8.12794 20.8387 8.86935 20.8387H16.6204C17.3648 20.8387 17.9208 20.2971 17.9684 19.5558L18.8109 6.72707" stroke="#1D1D1B" stroke-width="1.57538" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M5.33081 6.72707H20.1589Z" fill="#1D1D1B"/>
+                                    <path d="M5.33081 6.72707H20.1589" stroke="#1D1D1B" stroke-width="1.57538" stroke-miterlimit="10" stroke-linecap="round"/>
+                                    <path d="M10.0488 6.72708V5.12348C10.0484 4.99702 10.0743 4.87174 10.125 4.75484C10.1757 4.63794 10.2501 4.53172 10.3441 4.4423C10.438 4.35289 10.5496 4.28203 10.6725 4.23381C10.7953 4.18558 10.927 4.16095 11.0598 4.16132H14.4299C14.5627 4.16095 14.6944 4.18558 14.8172 4.23381C14.9401 4.28203 15.0517 4.35289 15.1456 4.4423C15.2396 4.53172 15.314 4.63794 15.3647 4.75484C15.4154 4.87174 15.4413 4.99702 15.4409 5.12348V6.72708" stroke="#1D1D1B" stroke-width="1.57538" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M12.7449 9.29283V18.273" stroke="#1D1D1B" stroke-width="1.57538" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M9.71179 9.29283L10.0488 18.273" stroke="#1D1D1B" stroke-width="1.57538" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M15.7779 9.29283L15.4409 18.273" stroke="#1D1D1B" stroke-width="1.57538" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                            <div class="size">
+                                <p class="num">0</p>
+                                <svg class="loading" width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M4.52045 12.1543L3.38766 11.0215C4.50283 14.6756 8.3691 16.7338 12.0232 15.6186C13.4157 15.1936 14.6387 14.34 15.5179 13.1795L16.5205 13.9391C13.7976 17.5387 8.67216 18.2496 5.07245 15.5267C3.58044 14.3982 2.52081 12.7919 2.07048 10.9762L0.889868 12.1543L0 11.265L2.7061 8.55892L5.41221 11.265L4.52045 12.1543Z" fill="black"/>
+                                    <path d="M17.2939 9.45383L14.5878 6.74772L15.4777 5.85785L16.6237 7.00323C15.5183 3.34326 11.6553 1.27234 7.9953 2.37772C6.53955 2.81738 5.26909 3.72412 4.38013 4.95792L3.35873 4.22286C4.62105 2.45808 6.53632 1.27101 8.67843 0.925822C9.11747 0.854551 9.56153 0.818561 10.0063 0.818207C13.7633 0.819977 17.0339 3.38602 17.9295 7.0347L19.1076 5.85785L20 6.74772L17.2939 9.45383ZM17.2624 7.64074L17.2945 7.67283L17.3411 7.62563L17.2624 7.64074Z" fill="black"/>
+                                </svg>
+                            </div>
+                            <div class="add">
+                                <svg width="26" height="25" viewBox="0 0 26 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M20.6752 12.129H4.90424" stroke="#1D1D1B" stroke-width="1.71035" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M12.7897 4.62457V19.6335" stroke="#1D1D1B" stroke-width="1.71035" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="place__order">
+                            Оформить
+                        </div>
+                    </button>
+                </div>
+                <div class="card">
+                    <div class="carousel hasmini">
+                        <aside class="mini">
+                            <div class="item">
+                                <img class="item__img" src="images/kedy 1.png" alt="kedy 1">
+                            </div>
+                            <div class="item">
+                                <img class="item__img" src="images/muzhskiye-tufli 1.png" alt="muzhskiye-tufli 1">
+                            </div>
+                            <div class="item">
+                                <img class="item__img" src="images/obuv 1.png" alt="obuv 1">
+                            </div>
+                        </aside>
+                        <div class="slider__container">
+                            <div class="slider">
+                                <div class="slide">
+                                    <img class="slide__img" src="images/kedy 1.png" alt="kedy 1">
+                                </div>
+                                <div class="slide">
+                                    <img class="slide__img" src="images/muzhskiye-tufli 1.png" alt="muzhskiye-tufli 1">
+                                </div>
+                                <div class="slide">
+                                    <img class="slide__img" src="images/obuv 1.png" alt="obuv 1">
+                                </div>
+                                <div class="dots">
+                                    <div class="dot"></div>
+                                    <div class="dot"></div>
+                                    <div class="dot"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="name__price">
+                        <div class="name">New balance</div>
+                        <div class="price">769</div>
+                        <div class="discount"></div>
+                    </div>
+                    <button class="checkout">
+                        <div class="start">Начать оформление</div>
+                        <div class="del__add">
+                            <div class="del">
+                                <svg width="26" height="25" viewBox="0 0 26 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6.67883 6.72707L7.52134 19.5558C7.56136 20.2971 8.12794 20.8387 8.86935 20.8387H16.6204C17.3648 20.8387 17.9208 20.2971 17.9684 19.5558L18.8109 6.72707" stroke="#1D1D1B" stroke-width="1.57538" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M5.33081 6.72707H20.1589Z" fill="#1D1D1B"/>
+                                    <path d="M5.33081 6.72707H20.1589" stroke="#1D1D1B" stroke-width="1.57538" stroke-miterlimit="10" stroke-linecap="round"/>
+                                    <path d="M10.0488 6.72708V5.12348C10.0484 4.99702 10.0743 4.87174 10.125 4.75484C10.1757 4.63794 10.2501 4.53172 10.3441 4.4423C10.438 4.35289 10.5496 4.28203 10.6725 4.23381C10.7953 4.18558 10.927 4.16095 11.0598 4.16132H14.4299C14.5627 4.16095 14.6944 4.18558 14.8172 4.23381C14.9401 4.28203 15.0517 4.35289 15.1456 4.4423C15.2396 4.53172 15.314 4.63794 15.3647 4.75484C15.4154 4.87174 15.4413 4.99702 15.4409 5.12348V6.72708" stroke="#1D1D1B" stroke-width="1.57538" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M12.7449 9.29283V18.273" stroke="#1D1D1B" stroke-width="1.57538" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M9.71179 9.29283L10.0488 18.273" stroke="#1D1D1B" stroke-width="1.57538" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M15.7779 9.29283L15.4409 18.273" stroke="#1D1D1B" stroke-width="1.57538" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                            <div class="size">
+                                <p class="num">0</p>
+                                <svg class="loading" width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M4.52045 12.1543L3.38766 11.0215C4.50283 14.6756 8.3691 16.7338 12.0232 15.6186C13.4157 15.1936 14.6387 14.34 15.5179 13.1795L16.5205 13.9391C13.7976 17.5387 8.67216 18.2496 5.07245 15.5267C3.58044 14.3982 2.52081 12.7919 2.07048 10.9762L0.889868 12.1543L0 11.265L2.7061 8.55892L5.41221 11.265L4.52045 12.1543Z" fill="black"/>
+                                    <path d="M17.2939 9.45383L14.5878 6.74772L15.4777 5.85785L16.6237 7.00323C15.5183 3.34326 11.6553 1.27234 7.9953 2.37772C6.53955 2.81738 5.26909 3.72412 4.38013 4.95792L3.35873 4.22286C4.62105 2.45808 6.53632 1.27101 8.67843 0.925822C9.11747 0.854551 9.56153 0.818561 10.0063 0.818207C13.7633 0.819977 17.0339 3.38602 17.9295 7.0347L19.1076 5.85785L20 6.74772L17.2939 9.45383ZM17.2624 7.64074L17.2945 7.67283L17.3411 7.62563L17.2624 7.64074Z" fill="black"/>
+                                </svg>
+                            </div>
+                            <div class="add">
+                                <svg width="26" height="25" viewBox="0 0 26 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M20.6752 12.129H4.90424" stroke="#1D1D1B" stroke-width="1.71035" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M12.7897 4.62457V19.6335" stroke="#1D1D1B" stroke-width="1.71035" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="place__order">
+                            Оформить
+                        </div>
+                    </button>
+                </div>
+                <div class="card">
+                    <div class="carousel nomini">
+                        <aside class="mini">
+                            <div class="item">
+                                <img class="item__img" src="images/kedy 1.png" alt="kedy 1">
+                            </div>
+                            <div class="item">
+                                <img class="item__img" src="images/muzhskiye-tufli 1.png" alt="muzhskiye-tufli 1">
+                            </div>
+                            <div class="item">
+                                <img class="item__img" src="images/obuv 1.png" alt="obuv 1">
+                            </div>
+                        </aside>
+                        <div class="slider__container">
+                            <div class="slider">
+                                <div class="slide">
+                                    <img class="slide__img" src="images/kedy 1.png" alt="kedy 1">
+                                </div>
+                                <div class="slide">
+                                    <img class="slide__img" src="images/muzhskiye-tufli 1.png" alt="muzhskiye-tufli 1">
+                                </div>
+                                <div class="slide">
+                                    <img class="slide__img" src="images/obuv 1.png" alt="obuv 1">
+                                </div>
+                                <div class="dots">
+                                    <div class="dot"></div>
+                                    <div class="dot"></div>
+                                    <div class="dot"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="name__price have-discount">
+                        <div class="name">Wesco</div>
+                        <div class="price">589</div>
+                        <div class="discount">819р</div>
+                    </div>
+                    <button class="checkout">
+                        <div class="start">Начать оформление</div>
+                        <div class="del__add">
+                            <div class="del">
+                                <svg width="26" height="25" viewBox="0 0 26 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6.67883 6.72707L7.52134 19.5558C7.56136 20.2971 8.12794 20.8387 8.86935 20.8387H16.6204C17.3648 20.8387 17.9208 20.2971 17.9684 19.5558L18.8109 6.72707" stroke="#1D1D1B" stroke-width="1.57538" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M5.33081 6.72707H20.1589Z" fill="#1D1D1B"/>
+                                    <path d="M5.33081 6.72707H20.1589" stroke="#1D1D1B" stroke-width="1.57538" stroke-miterlimit="10" stroke-linecap="round"/>
+                                    <path d="M10.0488 6.72708V5.12348C10.0484 4.99702 10.0743 4.87174 10.125 4.75484C10.1757 4.63794 10.2501 4.53172 10.3441 4.4423C10.438 4.35289 10.5496 4.28203 10.6725 4.23381C10.7953 4.18558 10.927 4.16095 11.0598 4.16132H14.4299C14.5627 4.16095 14.6944 4.18558 14.8172 4.23381C14.9401 4.28203 15.0517 4.35289 15.1456 4.4423C15.2396 4.53172 15.314 4.63794 15.3647 4.75484C15.4154 4.87174 15.4413 4.99702 15.4409 5.12348V6.72708" stroke="#1D1D1B" stroke-width="1.57538" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M12.7449 9.29283V18.273" stroke="#1D1D1B" stroke-width="1.57538" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M9.71179 9.29283L10.0488 18.273" stroke="#1D1D1B" stroke-width="1.57538" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M15.7779 9.29283L15.4409 18.273" stroke="#1D1D1B" stroke-width="1.57538" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                            <div class="size">
+                                <p class="num">0</p>
+                                <svg class="loading" width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M4.52045 12.1543L3.38766 11.0215C4.50283 14.6756 8.3691 16.7338 12.0232 15.6186C13.4157 15.1936 14.6387 14.34 15.5179 13.1795L16.5205 13.9391C13.7976 17.5387 8.67216 18.2496 5.07245 15.5267C3.58044 14.3982 2.52081 12.7919 2.07048 10.9762L0.889868 12.1543L0 11.265L2.7061 8.55892L5.41221 11.265L4.52045 12.1543Z" fill="black"/>
+                                    <path d="M17.2939 9.45383L14.5878 6.74772L15.4777 5.85785L16.6237 7.00323C15.5183 3.34326 11.6553 1.27234 7.9953 2.37772C6.53955 2.81738 5.26909 3.72412 4.38013 4.95792L3.35873 4.22286C4.62105 2.45808 6.53632 1.27101 8.67843 0.925822C9.11747 0.854551 9.56153 0.818561 10.0063 0.818207C13.7633 0.819977 17.0339 3.38602 17.9295 7.0347L19.1076 5.85785L20 6.74772L17.2939 9.45383ZM17.2624 7.64074L17.2945 7.67283L17.3411 7.62563L17.2624 7.64074Z" fill="black"/>
+                                </svg>
+                            </div>
+                            <div class="add">
+                                <svg width="26" height="25" viewBox="0 0 26 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M20.6752 12.129H4.90424" stroke="#1D1D1B" stroke-width="1.71035" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M12.7897 4.62457V19.6335" stroke="#1D1D1B" stroke-width="1.71035" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="place__order">
+                            Оформить
+                        </div>
+                    </button>
+                </div>
+                <div class="card">
+                    <div class="carousel hasmini">
+                        <aside class="mini">
+                            <div class="item">
+                                <img class="item__img" src="images/kedy 1.png" alt="kedy 1">
+                            </div>
+                            <div class="item">
+                                <img class="item__img" src="images/muzhskiye-tufli 1.png" alt="muzhskiye-tufli 1">
+                            </div>
+                            <div class="item">
+                                <img class="item__img" src="images/obuv 1.png" alt="obuv 1">
+                            </div>
+                        </aside>
+                        <div class="slider__container">
+                            <div class="slider">
+                                <div class="slide">
+                                    <img class="slide__img" src="images/kedy 1.png" alt="kedy 1">
+                                </div>
+                                <div class="slide">
+                                    <img class="slide__img" src="images/muzhskiye-tufli 1.png" alt="muzhskiye-tufli 1">
+                                </div>
+                                <div class="slide">
+                                    <img class="slide__img" src="images/obuv 1.png" alt="obuv 1">
+                                </div>
+                                <div class="dots">
+                                    <div class="dot"></div>
+                                    <div class="dot"></div>
+                                    <div class="dot"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="name__price">
+                        <div class="name">Columbia</div>
+                        <div class="price">759</div>
+                        <div class="discount"></div>
+                    </div>
+                    <button class="checkout">
+                        <div class="start">Начать оформление</div>
+                        <div class="del__add">
+                            <div class="del">
+                                <svg width="26" height="25" viewBox="0 0 26 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6.67883 6.72707L7.52134 19.5558C7.56136 20.2971 8.12794 20.8387 8.86935 20.8387H16.6204C17.3648 20.8387 17.9208 20.2971 17.9684 19.5558L18.8109 6.72707" stroke="#1D1D1B" stroke-width="1.57538" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M5.33081 6.72707H20.1589Z" fill="#1D1D1B"/>
+                                    <path d="M5.33081 6.72707H20.1589" stroke="#1D1D1B" stroke-width="1.57538" stroke-miterlimit="10" stroke-linecap="round"/>
+                                    <path d="M10.0488 6.72708V5.12348C10.0484 4.99702 10.0743 4.87174 10.125 4.75484C10.1757 4.63794 10.2501 4.53172 10.3441 4.4423C10.438 4.35289 10.5496 4.28203 10.6725 4.23381C10.7953 4.18558 10.927 4.16095 11.0598 4.16132H14.4299C14.5627 4.16095 14.6944 4.18558 14.8172 4.23381C14.9401 4.28203 15.0517 4.35289 15.1456 4.4423C15.2396 4.53172 15.314 4.63794 15.3647 4.75484C15.4154 4.87174 15.4413 4.99702 15.4409 5.12348V6.72708" stroke="#1D1D1B" stroke-width="1.57538" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M12.7449 9.29283V18.273" stroke="#1D1D1B" stroke-width="1.57538" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M9.71179 9.29283L10.0488 18.273" stroke="#1D1D1B" stroke-width="1.57538" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M15.7779 9.29283L15.4409 18.273" stroke="#1D1D1B" stroke-width="1.57538" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                            <div class="size">
+                                <p class="num">0</p>
+                                <svg class="loading" width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M4.52045 12.1543L3.38766 11.0215C4.50283 14.6756 8.3691 16.7338 12.0232 15.6186C13.4157 15.1936 14.6387 14.34 15.5179 13.1795L16.5205 13.9391C13.7976 17.5387 8.67216 18.2496 5.07245 15.5267C3.58044 14.3982 2.52081 12.7919 2.07048 10.9762L0.889868 12.1543L0 11.265L2.7061 8.55892L5.41221 11.265L4.52045 12.1543Z" fill="black"/>
+                                    <path d="M17.2939 9.45383L14.5878 6.74772L15.4777 5.85785L16.6237 7.00323C15.5183 3.34326 11.6553 1.27234 7.9953 2.37772C6.53955 2.81738 5.26909 3.72412 4.38013 4.95792L3.35873 4.22286C4.62105 2.45808 6.53632 1.27101 8.67843 0.925822C9.11747 0.854551 9.56153 0.818561 10.0063 0.818207C13.7633 0.819977 17.0339 3.38602 17.9295 7.0347L19.1076 5.85785L20 6.74772L17.2939 9.45383ZM17.2624 7.64074L17.2945 7.67283L17.3411 7.62563L17.2624 7.64074Z" fill="black"/>
+                                </svg>
+                            </div>
+                            <div class="add">
+                                <svg width="26" height="25" viewBox="0 0 26 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M20.6752 12.129H4.90424" stroke="#1D1D1B" stroke-width="1.71035" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M12.7897 4.62457V19.6335" stroke="#1D1D1B" stroke-width="1.71035" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="place__order">
+                            Оформить
+                        </div>
+                    </button>
+                </div>
+                <div class="card">
+                    <div class="carousel hasmini">
+                        <aside class="mini">
+                            <div class="item">
+                                <img class="item__img" src="images/kedy 1.png" alt="kedy 1">
+                            </div>
+                            <div class="item">
+                                <img class="item__img" src="images/muzhskiye-tufli 1.png" alt="muzhskiye-tufli 1">
+                            </div>
+                            <div class="item">
+                                <img class="item__img" src="images/obuv 1.png" alt="obuv 1">
+                            </div>
+                        </aside>
+                        <div class="slider__container">
+                            <div class="slider">
+                                <div class="slide">
+                                    <img class="slide__img" src="images/kedy 1.png" alt="kedy 1">
+                                </div>
+                                <div class="slide">
+                                    <img class="slide__img" src="images/muzhskiye-tufli 1.png" alt="muzhskiye-tufli 1">
+                                </div>
+                                <div class="slide">
+                                    <img class="slide__img" src="images/obuv 1.png" alt="obuv 1">
+                                </div>
+                                <div class="dots">
+                                    <div class="dot"></div>
+                                    <div class="dot"></div>
+                                    <div class="dot"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="name__price have-discount">
+                        <div class="name">ECCO</div>
+                        <div class="price">679</div>
+                        <div class="discount">879р</div>
+                    </div>
+                    <button class="checkout">
+                        <div class="start">Начать оформление</div>
+                        <div class="del__add">
+                            <div class="del">
+                                <svg width="26" height="25" viewBox="0 0 26 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6.67883 6.72707L7.52134 19.5558C7.56136 20.2971 8.12794 20.8387 8.86935 20.8387H16.6204C17.3648 20.8387 17.9208 20.2971 17.9684 19.5558L18.8109 6.72707" stroke="#1D1D1B" stroke-width="1.57538" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M5.33081 6.72707H20.1589Z" fill="#1D1D1B"/>
+                                    <path d="M5.33081 6.72707H20.1589" stroke="#1D1D1B" stroke-width="1.57538" stroke-miterlimit="10" stroke-linecap="round"/>
+                                    <path d="M10.0488 6.72708V5.12348C10.0484 4.99702 10.0743 4.87174 10.125 4.75484C10.1757 4.63794 10.2501 4.53172 10.3441 4.4423C10.438 4.35289 10.5496 4.28203 10.6725 4.23381C10.7953 4.18558 10.927 4.16095 11.0598 4.16132H14.4299C14.5627 4.16095 14.6944 4.18558 14.8172 4.23381C14.9401 4.28203 15.0517 4.35289 15.1456 4.4423C15.2396 4.53172 15.314 4.63794 15.3647 4.75484C15.4154 4.87174 15.4413 4.99702 15.4409 5.12348V6.72708" stroke="#1D1D1B" stroke-width="1.57538" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M12.7449 9.29283V18.273" stroke="#1D1D1B" stroke-width="1.57538" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M9.71179 9.29283L10.0488 18.273" stroke="#1D1D1B" stroke-width="1.57538" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M15.7779 9.29283L15.4409 18.273" stroke="#1D1D1B" stroke-width="1.57538" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                            <div class="size">
+                                <p class="num">0</p>
+                                <svg class="loading" width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M4.52045 12.1543L3.38766 11.0215C4.50283 14.6756 8.3691 16.7338 12.0232 15.6186C13.4157 15.1936 14.6387 14.34 15.5179 13.1795L16.5205 13.9391C13.7976 17.5387 8.67216 18.2496 5.07245 15.5267C3.58044 14.3982 2.52081 12.7919 2.07048 10.9762L0.889868 12.1543L0 11.265L2.7061 8.55892L5.41221 11.265L4.52045 12.1543Z" fill="black"/>
+                                    <path d="M17.2939 9.45383L14.5878 6.74772L15.4777 5.85785L16.6237 7.00323C15.5183 3.34326 11.6553 1.27234 7.9953 2.37772C6.53955 2.81738 5.26909 3.72412 4.38013 4.95792L3.35873 4.22286C4.62105 2.45808 6.53632 1.27101 8.67843 0.925822C9.11747 0.854551 9.56153 0.818561 10.0063 0.818207C13.7633 0.819977 17.0339 3.38602 17.9295 7.0347L19.1076 5.85785L20 6.74772L17.2939 9.45383ZM17.2624 7.64074L17.2945 7.67283L17.3411 7.62563L17.2624 7.64074Z" fill="black"/>
+                                </svg>
+                            </div>
+                            <div class="add">
+                                <svg width="26" height="25" viewBox="0 0 26 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M20.6752 12.129H4.90424" stroke="#1D1D1B" stroke-width="1.71035" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M12.7897 4.62457V19.6335" stroke="#1D1D1B" stroke-width="1.71035" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="place__order">
+                            Оформить
+                        </div>
+                    </button>
+                </div>
+                <div class="card">
+                    <div class="carousel nomini">
+                        <aside class="mini">
+                            <div class="item">
+                                <img class="item__img" src="images/kedy 1.png" alt="kedy 1">
+                            </div>
+                            <div class="item">
+                                <img class="item__img" src="images/muzhskiye-tufli 1.png" alt="muzhskiye-tufli 1">
+                            </div>
+                            <div class="item">
+                                <img class="item__img" src="images/obuv 1.png" alt="obuv 1">
+                            </div>
+                        </aside>
+                        <div class="slider__container">
+                            <div class="slider">
+                                <div class="slide">
+                                    <img class="slide__img" src="images/kedy 1.png" alt="kedy 1">
+                                </div>
+                                <div class="slide">
+                                    <img class="slide__img" src="images/muzhskiye-tufli 1.png" alt="muzhskiye-tufli 1">
+                                </div>
+                                <div class="slide">
+                                    <img class="slide__img" src="images/obuv 1.png" alt="obuv 1">
+                                </div>
+                                <div class="dots">
+                                    <div class="dot"></div>
+                                    <div class="dot"></div>
+                                    <div class="dot"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="name__price">
+                        <div class="name">Armani</div>
+                        <div class="price">1199</div>
+                        <div class="discount"></div>
+                    </div>
+                    <button class="checkout">
+                        <div class="start">Начать оформление</div>
+                        <div class="del__add">
+                            <div class="del">
+                                <svg width="26" height="25" viewBox="0 0 26 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6.67883 6.72707L7.52134 19.5558C7.56136 20.2971 8.12794 20.8387 8.86935 20.8387H16.6204C17.3648 20.8387 17.9208 20.2971 17.9684 19.5558L18.8109 6.72707" stroke="#1D1D1B" stroke-width="1.57538" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M5.33081 6.72707H20.1589Z" fill="#1D1D1B"/>
+                                    <path d="M5.33081 6.72707H20.1589" stroke="#1D1D1B" stroke-width="1.57538" stroke-miterlimit="10" stroke-linecap="round"/>
+                                    <path d="M10.0488 6.72708V5.12348C10.0484 4.99702 10.0743 4.87174 10.125 4.75484C10.1757 4.63794 10.2501 4.53172 10.3441 4.4423C10.438 4.35289 10.5496 4.28203 10.6725 4.23381C10.7953 4.18558 10.927 4.16095 11.0598 4.16132H14.4299C14.5627 4.16095 14.6944 4.18558 14.8172 4.23381C14.9401 4.28203 15.0517 4.35289 15.1456 4.4423C15.2396 4.53172 15.314 4.63794 15.3647 4.75484C15.4154 4.87174 15.4413 4.99702 15.4409 5.12348V6.72708" stroke="#1D1D1B" stroke-width="1.57538" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M12.7449 9.29283V18.273" stroke="#1D1D1B" stroke-width="1.57538" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M9.71179 9.29283L10.0488 18.273" stroke="#1D1D1B" stroke-width="1.57538" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M15.7779 9.29283L15.4409 18.273" stroke="#1D1D1B" stroke-width="1.57538" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                            <div class="size">
+                                <p class="num">0</p>
+                                <svg class="loading" width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M4.52045 12.1543L3.38766 11.0215C4.50283 14.6756 8.3691 16.7338 12.0232 15.6186C13.4157 15.1936 14.6387 14.34 15.5179 13.1795L16.5205 13.9391C13.7976 17.5387 8.67216 18.2496 5.07245 15.5267C3.58044 14.3982 2.52081 12.7919 2.07048 10.9762L0.889868 12.1543L0 11.265L2.7061 8.55892L5.41221 11.265L4.52045 12.1543Z" fill="black"/>
+                                    <path d="M17.2939 9.45383L14.5878 6.74772L15.4777 5.85785L16.6237 7.00323C15.5183 3.34326 11.6553 1.27234 7.9953 2.37772C6.53955 2.81738 5.26909 3.72412 4.38013 4.95792L3.35873 4.22286C4.62105 2.45808 6.53632 1.27101 8.67843 0.925822C9.11747 0.854551 9.56153 0.818561 10.0063 0.818207C13.7633 0.819977 17.0339 3.38602 17.9295 7.0347L19.1076 5.85785L20 6.74772L17.2939 9.45383ZM17.2624 7.64074L17.2945 7.67283L17.3411 7.62563L17.2624 7.64074Z" fill="black"/>
+                                </svg>
+                            </div>
+                            <div class="add">
+                                <svg width="26" height="25" viewBox="0 0 26 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M20.6752 12.129H4.90424" stroke="#1D1D1B" stroke-width="1.71035" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M12.7897 4.62457V19.6335" stroke="#1D1D1B" stroke-width="1.71035" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="place__order">
+                            Оформить
+                        </div>
+                    </button>
+                </div>
+                <div class="card">
+                    <div class="carousel nomini">
+                        <aside class="mini">
+                            <div class="item">
+                                <img class="item__img" src="images/kedy 1.png" alt="kedy 1">
+                            </div>
+                            <div class="item">
+                                <img class="item__img" src="images/muzhskiye-tufli 1.png" alt="muzhskiye-tufli 1">
+                            </div>
+                            <div class="item">
+                                <img class="item__img" src="images/obuv 1.png" alt="obuv 1">
+                            </div>
+                        </aside>
+                        <div class="slider__container">
+                            <div class="slider">
+                                <div class="slide">
+                                    <img class="slide__img" src="images/kedy 1.png" alt="kedy 1">
+                                </div>
+                                <div class="slide">
+                                    <img class="slide__img" src="images/muzhskiye-tufli 1.png" alt="muzhskiye-tufli 1">
+                                </div>
+                                <div class="slide">
+                                    <img class="slide__img" src="images/obuv 1.png" alt="obuv 1">
+                                </div>
+                                <div class="dots">
+                                    <div class="dot"></div>
+                                    <div class="dot"></div>
+                                    <div class="dot"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="name__price have-discount">
+                        <div class="name">Bayota</div>
+                        <div class="price">499</div>
+                        <div class="discount">739р</div>
+                    </div>
+                    <button class="checkout">
+                        <div class="start">Начать оформление</div>
+                        <div class="del__add">
+                            <div class="del">
+                                <svg width="26" height="25" viewBox="0 0 26 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6.67883 6.72707L7.52134 19.5558C7.56136 20.2971 8.12794 20.8387 8.86935 20.8387H16.6204C17.3648 20.8387 17.9208 20.2971 17.9684 19.5558L18.8109 6.72707" stroke="#1D1D1B" stroke-width="1.57538" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M5.33081 6.72707H20.1589Z" fill="#1D1D1B"/>
+                                    <path d="M5.33081 6.72707H20.1589" stroke="#1D1D1B" stroke-width="1.57538" stroke-miterlimit="10" stroke-linecap="round"/>
+                                    <path d="M10.0488 6.72708V5.12348C10.0484 4.99702 10.0743 4.87174 10.125 4.75484C10.1757 4.63794 10.2501 4.53172 10.3441 4.4423C10.438 4.35289 10.5496 4.28203 10.6725 4.23381C10.7953 4.18558 10.927 4.16095 11.0598 4.16132H14.4299C14.5627 4.16095 14.6944 4.18558 14.8172 4.23381C14.9401 4.28203 15.0517 4.35289 15.1456 4.4423C15.2396 4.53172 15.314 4.63794 15.3647 4.75484C15.4154 4.87174 15.4413 4.99702 15.4409 5.12348V6.72708" stroke="#1D1D1B" stroke-width="1.57538" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M12.7449 9.29283V18.273" stroke="#1D1D1B" stroke-width="1.57538" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M9.71179 9.29283L10.0488 18.273" stroke="#1D1D1B" stroke-width="1.57538" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M15.7779 9.29283L15.4409 18.273" stroke="#1D1D1B" stroke-width="1.57538" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                            <div class="size">
+                                <p class="num">0</p>
+                                <svg class="loading" width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M4.52045 12.1543L3.38766 11.0215C4.50283 14.6756 8.3691 16.7338 12.0232 15.6186C13.4157 15.1936 14.6387 14.34 15.5179 13.1795L16.5205 13.9391C13.7976 17.5387 8.67216 18.2496 5.07245 15.5267C3.58044 14.3982 2.52081 12.7919 2.07048 10.9762L0.889868 12.1543L0 11.265L2.7061 8.55892L5.41221 11.265L4.52045 12.1543Z" fill="black"/>
+                                    <path d="M17.2939 9.45383L14.5878 6.74772L15.4777 5.85785L16.6237 7.00323C15.5183 3.34326 11.6553 1.27234 7.9953 2.37772C6.53955 2.81738 5.26909 3.72412 4.38013 4.95792L3.35873 4.22286C4.62105 2.45808 6.53632 1.27101 8.67843 0.925822C9.11747 0.854551 9.56153 0.818561 10.0063 0.818207C13.7633 0.819977 17.0339 3.38602 17.9295 7.0347L19.1076 5.85785L20 6.74772L17.2939 9.45383ZM17.2624 7.64074L17.2945 7.67283L17.3411 7.62563L17.2624 7.64074Z" fill="black"/>
+                                </svg>
+                            </div>
+                            <div class="add">
+                                <svg width="26" height="25" viewBox="0 0 26 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M20.6752 12.129H4.90424" stroke="#1D1D1B" stroke-width="1.71035" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M12.7897 4.62457V19.6335" stroke="#1D1D1B" stroke-width="1.71035" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="place__order">
+                            Оформить
+                        </div>
+                    </button>
+                </div>
+                <div class="card">
+                    <div class="carousel hasmini">
+                        <aside class="mini">
+                            <div class="item">
+                                <img class="item__img" src="images/kedy 1.png" alt="kedy 1">
+                            </div>
+                            <div class="item">
+                                <img class="item__img" src="images/muzhskiye-tufli 1.png" alt="muzhskiye-tufli 1">
+                            </div>
+                            <div class="item">
+                                <img class="item__img" src="images/obuv 1.png" alt="obuv 1">
+                            </div>
+                        </aside>
+                        <div class="slider__container">
+                            <div class="slider">
+                                <div class="slide">
+                                    <img class="slide__img" src="images/kedy 1.png" alt="kedy 1">
+                                </div>
+                                <div class="slide">
+                                    <img class="slide__img" src="images/muzhskiye-tufli 1.png" alt="muzhskiye-tufli 1">
+                                </div>
+                                <div class="slide">
+                                    <img class="slide__img" src="images/obuv 1.png" alt="obuv 1">
+                                </div>
+                                <div class="dots">
+                                    <div class="dot"></div>
+                                    <div class="dot"></div>
+                                    <div class="dot"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="name__price">
+                        <div class="name">Jordan</div>
+                        <div class="price">799</div>
+                        <div class="discount"></div>
+                    </div>
+                    <button class="checkout">
+                        <div class="start">Начать оформление</div>
+                        <div class="del__add">
+                            <div class="del">
+                                <svg width="26" height="25" viewBox="0 0 26 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6.67883 6.72707L7.52134 19.5558C7.56136 20.2971 8.12794 20.8387 8.86935 20.8387H16.6204C17.3648 20.8387 17.9208 20.2971 17.9684 19.5558L18.8109 6.72707" stroke="#1D1D1B" stroke-width="1.57538" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M5.33081 6.72707H20.1589Z" fill="#1D1D1B"/>
+                                    <path d="M5.33081 6.72707H20.1589" stroke="#1D1D1B" stroke-width="1.57538" stroke-miterlimit="10" stroke-linecap="round"/>
+                                    <path d="M10.0488 6.72708V5.12348C10.0484 4.99702 10.0743 4.87174 10.125 4.75484C10.1757 4.63794 10.2501 4.53172 10.3441 4.4423C10.438 4.35289 10.5496 4.28203 10.6725 4.23381C10.7953 4.18558 10.927 4.16095 11.0598 4.16132H14.4299C14.5627 4.16095 14.6944 4.18558 14.8172 4.23381C14.9401 4.28203 15.0517 4.35289 15.1456 4.4423C15.2396 4.53172 15.314 4.63794 15.3647 4.75484C15.4154 4.87174 15.4413 4.99702 15.4409 5.12348V6.72708" stroke="#1D1D1B" stroke-width="1.57538" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M12.7449 9.29283V18.273" stroke="#1D1D1B" stroke-width="1.57538" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M9.71179 9.29283L10.0488 18.273" stroke="#1D1D1B" stroke-width="1.57538" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M15.7779 9.29283L15.4409 18.273" stroke="#1D1D1B" stroke-width="1.57538" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                            <div class="size">
+                                <p class="num">0</p>
+                                <svg class="loading" width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M4.52045 12.1543L3.38766 11.0215C4.50283 14.6756 8.3691 16.7338 12.0232 15.6186C13.4157 15.1936 14.6387 14.34 15.5179 13.1795L16.5205 13.9391C13.7976 17.5387 8.67216 18.2496 5.07245 15.5267C3.58044 14.3982 2.52081 12.7919 2.07048 10.9762L0.889868 12.1543L0 11.265L2.7061 8.55892L5.41221 11.265L4.52045 12.1543Z" fill="black"/>
+                                    <path d="M17.2939 9.45383L14.5878 6.74772L15.4777 5.85785L16.6237 7.00323C15.5183 3.34326 11.6553 1.27234 7.9953 2.37772C6.53955 2.81738 5.26909 3.72412 4.38013 4.95792L3.35873 4.22286C4.62105 2.45808 6.53632 1.27101 8.67843 0.925822C9.11747 0.854551 9.56153 0.818561 10.0063 0.818207C13.7633 0.819977 17.0339 3.38602 17.9295 7.0347L19.1076 5.85785L20 6.74772L17.2939 9.45383ZM17.2624 7.64074L17.2945 7.67283L17.3411 7.62563L17.2624 7.64074Z" fill="black"/>
+                                </svg>
+                            </div>
+                            <div class="add">
+                                <svg width="26" height="25" viewBox="0 0 26 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M20.6752 12.129H4.90424" stroke="#1D1D1B" stroke-width="1.71035" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M12.7897 4.62457V19.6335" stroke="#1D1D1B" stroke-width="1.71035" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="place__order">
+                            Оформить
+                        </div>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
