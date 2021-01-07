@@ -687,7 +687,7 @@ $new_height: 80px;
         width: 100%;
         min-height: 380px;
         padding: 0 30px;
-        background: url(images/ad.jpg) no-repeat;
+        background: url(images/no_ban.jpg) no-repeat;
         background-size: cover;
         display: flex;
         flex-direction: column;
@@ -701,7 +701,7 @@ $new_height: 80px;
         .section__desc{
             color: rgba(255, 255, 255, 0.6);
         }
-        .ad__buttons{
+        .no__ban__buttons{
             margin-top: 50px;
             display: flex;
             transition: 0.5s ease-in-out;

@@ -159,7 +159,7 @@
     .main .banner .banner__text .banner__buttons .banner__button:last-child {
       margin-left: 0;
       margin-top: 20px; }
-  .main .no__ban .ad__buttons .try__watch {
+  .main .no__ban .no__ban__buttons .try__watch {
     padding: 15px 20px; } }
 @media all and (max-width: 400px) {
   .section__heading {
@@ -181,9 +181,9 @@
     left: 20px;
     right: 20px;
     bottom: 20px; }
-  .main .no__ban .ad__buttons {
+  .main .no__ban .no__ban__buttons {
     flex-direction: column; }
-    .main .no__ban .ad__buttons .try__watch:last-child {
+    .main .no__ban .no__ban__buttons .try__watch:last-child {
       margin-top: 20px;
       margin-left: 0; } }
 @media all and (max-width: 300px) {
