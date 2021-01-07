@@ -564,7 +564,7 @@ a {
         width: 100%;
         height: 3px;
         background: #F04D5D; }
-  .main .ad__container {
+  .main .no__ban {
     margin-top: 200px;
     width: 100%;
     min-height: 380px;
@@ -577,31 +577,31 @@ a {
     justify-content: center;
     border-radius: 20px;
     transition: 0.5s ease-in-out; }
-    .main .ad__container .section__heading {
+    .main .no__ban .section__heading {
       color: #fff; }
-    .main .ad__container .section__desc {
+    .main .no__ban .section__desc {
       color: rgba(255, 255, 255, 0.6); }
-    .main .ad__container .ad__buttons {
+    .main .no__ban .ad__buttons {
       margin-top: 50px;
       display: flex;
       transition: 0.5s ease-in-out; }
-      .main .ad__container .ad__buttons .try__watch {
+      .main .no__ban .ad__buttons .try__watch {
         padding: 15px 40px;
         border: 2px solid #FFFFFF;
         border-radius: 50px;
         transition: 0.2s;
         user-select: none; }
-      .main .ad__container .ad__buttons .try__watch:nth-child(1) {
+      .main .no__ban .ad__buttons .try__watch:nth-child(1) {
         color: #16133D;
         background: #fff; }
-        .main .ad__container .ad__buttons .try__watch:nth-child(1) .blue {
+        .main .no__ban .ad__buttons .try__watch:nth-child(1) .blue {
           transition: 0.1s; }
-      .main .ad__container .ad__buttons .try__watch:nth-child(1):hover .blue {
+      .main .no__ban .ad__buttons .try__watch:nth-child(1):hover .blue {
         color: #007FFC; }
-      .main .ad__container .ad__buttons .try__watch:nth-child(2) {
+      .main .no__ban .ad__buttons .try__watch:nth-child(2) {
         margin-left: 20px;
         color: #fff; }
-      .main .ad__container .ad__buttons .try__watch:nth-child(2):hover {
+      .main .no__ban .ad__buttons .try__watch:nth-child(2):hover {
         background: rgba(255, 255, 255, 0.2); }
 
 .footer {
